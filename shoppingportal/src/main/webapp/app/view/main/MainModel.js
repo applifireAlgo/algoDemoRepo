@@ -1,0 +1,14 @@
+/**
+ * This class is the view model for the Main view of the application.
+ */
+Ext.define('Shoppingportal.view.main.MainModel', {
+    extend: 'Ext.app.ViewModel',
+
+    alias: 'viewmodel.main',
+
+    data: {
+        name: 'Shoppingportal'
+    }
+
+    //TODO - add data, formulas and/or methods to support your view
+});

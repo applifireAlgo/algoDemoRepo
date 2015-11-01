@@ -1,0 +1,33 @@
+
+
+
+ development mode --enabled true 
+
+
+
+// Spring batch Project Creation 
+
+project --topLevelPackage com --projectName shoppingportalScheduler
+quit
+
+
+ development mode --enabled true 
+
+
+
+buzzorproject --topLevelPackage com --isRuleEngine true --projectName shoppingportalScheduler --sourceCodeLocation /mnt/applifire/appConfigTemplate/appSourceCode/ --tomcatDeployLocation "" --tomcatAbsolutePath /Softwares/rcmTomcat/webapps ---userName root --password root --schema jdbc:mysql://localhost:3306/information_schema --solrhome /mnt/applifire/customers/2E43408D-CA83-482E-8337-A1DD51B90696/user/DB683082-A9D8-43A3-AA3A-B473A59AE6E9/Z8SVGEF2PERLAVEDG9BPUG/solr-4.9.0 --isSpringBatch true
+
+entityManagerFactoryBean add property --name packagesToScan --value com.app,com.athena,com.spartan
+
+Persistent change persistentUnitName --name shoppingportalScheduler
+
+Persistent add property --name eclipselink.dialect --value org.eclipse.persistence.platform.database.MySQLPlatform
+
+Persistent add property --name javax.persistence.jdbc.url --value jdbc:mysql://localhost:3306/shopdb
+
+Persistent add property --name javax.persistence.jdbc.user --value shopdb
+
+Persistent add property --name javax.persistence.jdbc.password --value shopdb
+
+Persistent add property --name javax.persistence.jdbc.driver --value com.mysql.jdbc.Driver
+quit
