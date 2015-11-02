@@ -8,7 +8,7 @@ Ext.application({
 
     extend: 'Shoppingportal.Application',
     
-    /**AppPathDetails**/
+/**AppPathDetails**/autoCreateViewport: (Ext.os.deviceType=='Desktop')?'Shoppingportal.view.mainleftmenutree.MainPanel':'Shoppingportal.view.mobileview.login.Login',
     //autoCreateViewport: (Ext.os.deviceType=='Desktop')?'Shoppingportal.view.login.LoginPage':'Shoppingportal.view.mobileview.login.LoginPage',//'Shoppingportal.view.login.Login'
     	
     //-------------------------------------------------------------------------
